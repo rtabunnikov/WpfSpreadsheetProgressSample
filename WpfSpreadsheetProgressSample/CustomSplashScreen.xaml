@@ -9,16 +9,14 @@
         dx:ThemeManager.ThemeName="Office2019Colorful"
         DataContext="{x:Static mvvm:DXSplashScreenViewModel.DesignTimeData}">
     <dx:BackgroundPanel>
-        <Border BorderBrush="{DynamicResource {dxt:BrushesThemeKey ResourceKey=PanelBorder}}" BorderThickness="1">
-            <Grid Margin="16">
-                <StackPanel VerticalAlignment="Center">
-                    <TextBlock Text="{Binding Title}" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,8"/>
-                    <ProgressBar IsIndeterminate="False" Height="20" Width="240" Value="{Binding Progress}"/>
-                    <Label HorizontalAlignment="Right" Margin="0,8,0,0" Foreground="#FF1686F5" MouseLeftButtonUp="Cancel_Click">
-                        <TextBlock TextDecorations="Underline">Cancel</TextBlock>
-                    </Label>
-                </StackPanel>
-            </Grid>
+        <Border BorderBrush="{DynamicResource {dxt:BrushesThemeKey ResourceKey=PanelBorder}}" BorderThickness="1" Padding="16">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="{Binding Title}" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,8"/>
+                <ProgressBar IsIndeterminate="False" Height="20" Width="240" Value="{Binding Progress}"/>
+                <Label HorizontalAlignment="Right" Margin="0,8,0,0" Foreground="#FF1686F5" MouseLeftButtonUp="Cancel_Click">
+                    <TextBlock TextDecorations="Underline">Cancel</TextBlock>
+                </Label>
+            </StackPanel>
         </Border>
     </dx:BackgroundPanel>
 </dx:SplashScreenWindow>
