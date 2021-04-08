@@ -8,10 +8,11 @@
         xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" x:Class="WpfSpreadsheetProgressSample.MainWindow"
         mc:Ignorable="d"
         dx:ThemeManager.ThemeName="Office2019Colorful"
-        Title="Spreadsheet Progress Sample" Height="450" Width="800" WindowState="Maximized">
+        Title="Spreadsheet Progress Sample"
+        Height="450"
+        Width="800"
+        WindowState="Maximized">
     <Grid>
-
-        <dxsps:SpreadsheetControl x:Name="spreadsheetControl1" CommandBarStyle="Ribbon" ShowFormulaBar="True" ShowStatusBar="True"/>
-
+        <dxsps:SpreadsheetControl x:Name="spreadsheetControl1" CommandBarStyle="Ribbon" ShowFormulaBar="True" ShowStatusBar="True" UnhandledException="spreadsheetControl1_UnhandledException"/>
     </Grid>
 </dx:ThemedWindow>
