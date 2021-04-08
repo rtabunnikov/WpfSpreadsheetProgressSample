@@ -13,6 +13,10 @@
         Width="800"
         WindowState="Maximized">
     <Grid>
-        <dxsps:SpreadsheetControl x:Name="spreadsheetControl1" CommandBarStyle="Ribbon" ShowFormulaBar="True" ShowStatusBar="True" UnhandledException="spreadsheetControl1_UnhandledException"/>
+        <dxsps:SpreadsheetControl x:Name="spreadsheetControl1"
+                                  CommandBarStyle="Ribbon"
+                                  ShowFormulaBar="True"
+                                  ShowStatusBar="True"
+                                  UnhandledException="spreadsheetControl1_UnhandledException"/>
     </Grid>
 </dx:ThemedWindow>
