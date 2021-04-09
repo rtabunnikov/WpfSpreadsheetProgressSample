@@ -4,28 +4,28 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:dxt="http://schemas.devexpress.com/winfx/2008/xaml/core/themekeys"
         xmlns:mvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        BorderBrush="{DynamicResource {dxt:BrushesThemeKey ResourceKey=PanelBorder}}" 
+        BorderThickness="1"
+        AllowTheming="True"
         Height="120"
         Width="300"
-        dx:ThemeManager.ThemeName="Office2019Colorful"
         DataContext="{x:Static mvvm:DXSplashScreenViewModel.DesignTimeData}">
     <dx:BackgroundPanel>
-        <Border BorderBrush="{DynamicResource {dxt:BrushesThemeKey ResourceKey=PanelBorder}}" BorderThickness="1" Padding="16">
-            <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="{Binding Title}"
+        <StackPanel VerticalAlignment="Center" Margin="16">
+            <TextBlock Text="{Binding Title}"
                            FontSize="16"
                            HorizontalAlignment="Left"
                            Margin="0,0,0,8"/>
-                <ProgressBar IsIndeterminate="False"
+            <ProgressBar IsIndeterminate="False"
                            Height="20"
                            Width="240"
                            Value="{Binding Progress}"/>
-                <TextBlock Text="Cancel"
+            <TextBlock Text="Cancel"
                            HorizontalAlignment="Right"
                            Margin="0,8,0,0"
                            Foreground="#FF1686F5"
                            TextDecorations="Underline"
                            MouseLeftButtonUp="Cancel_Click" />
-            </StackPanel>
-        </Border>
+        </StackPanel>
     </dx:BackgroundPanel>
 </dx:SplashScreenWindow>
